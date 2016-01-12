@@ -79,6 +79,10 @@
     beginPoint = [touch locationInView:self];
     
     beginWidth = CGPathGetPathBoundingBox(shapeLayer.path).size.width;
+    
+    [self doAnimation:beginPoint.x-beginWidth];
+    
+    beginWidth = beginPoint.x;
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
