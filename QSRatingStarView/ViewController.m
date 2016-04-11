@@ -19,6 +19,8 @@
 {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     QSRatingView *view = [[QSRatingView alloc] initWithFrame:CGRectMake(10, 100, CGRectGetWidth(self.view.frame)-20, 50) andStarCount:5];
     [self.view addSubview:view];
 }
